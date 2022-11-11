@@ -13,8 +13,8 @@ var app = new Vue({
         },
         previous: function(){
             this.img--;
-            if (this.img == this.images.length - 1){
-                this.img = 0
+            if (this.img == 0){
+                this.img = 4
             }
         },
     },
