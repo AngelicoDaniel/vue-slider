@@ -2,7 +2,7 @@
 var app = new Vue({
     el: '#root',
     data: {
-      images: [ 'assets/img/Th06cover.jpg', 'assets/img/Th07cover.jpg', 'assets/img/Th08cover.jpg', 'assets/img/Th09cover.jpg', 'assets/img/Th10cover.jpg' ],
+      images: [ 'assets/img/Th06cover.jpg', 'assets/img/Th07cover.jpg', 'assets/img/Th08cover.jpg', 'assets/img/Th09cover.jpg', 'assets/img/Th10cover.jpg', 'assets/img/Th11cover.jpg', 'assets/img/Th12cover.jpg', 'assets/img/Th13cover.jpg', 'assets/img/Th14cover.jpg', 'assets/img/Th15cover.jpg', 'assets/img/Th16cover.jpg'],
       img: 0
     },
     methods: {
@@ -10,12 +10,13 @@ var app = new Vue({
             this.img++;
             if (this.img == this.images.length - 1){
                 this.img = 0
+            
             }
         },
         previous: function(){
             this.img--;
             if (this.img == -1){
-                this.img = 4
+                this.img = 10
             }
         },
     },
