@@ -1,3 +1,4 @@
+
 var app = new Vue({
     el: '#root',
     data: {
@@ -13,12 +14,12 @@ var app = new Vue({
         },
         previous: function(){
             this.img--;
-            if (this.img == 0){
+            if (this.img == -1){
                 this.img = 4
             }
         },
     },
     created: function() {
-        setInterval(this.next, 3000)
+        setInterval(this.next, 300000)
     }
   })
