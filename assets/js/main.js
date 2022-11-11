@@ -7,6 +7,9 @@ var app = new Vue({
     methods: {
         next: function(){
             this.img++;
+            if (this.img == this.images.length - 1){
+                this.img = 0
+            }
         }
     }
   })
