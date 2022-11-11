@@ -19,6 +19,9 @@ var app = new Vue({
                 this.img = 10
             }
         },
+        selcected: function(index){
+            this.img = index
+        }
     },
     created: function() {
         setInterval(this.next, 300000)
