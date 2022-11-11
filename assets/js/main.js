@@ -10,6 +10,15 @@ var app = new Vue({
             if (this.img == this.images.length - 1){
                 this.img = 0
             }
-        }
+        },
+        previous: function(){
+            this.img--;
+            if (this.img == this.images.length - 1){
+                this.img = 0
+            }
+        },
+    },
+    created: function() {
+        setInterval(this.next, 3000)
     }
   })
