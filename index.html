@@ -21,7 +21,7 @@
     </section> 
 
     <div class="d-flex align-items-center justify-content-center">
-        <i v-for="img in images" class="dot" @click="selected(index)"></i>
+        <a v-for="img in images" class="dot" :class @click="selected"></a>
     </div>
 
     </main>
