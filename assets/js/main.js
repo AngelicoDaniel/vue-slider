@@ -19,7 +19,7 @@ var app = new Vue({
                 this.img = 10
             }
         },
-        selcected: function(index){
+        selected: function(index){
             this.img = index
         }
     },
