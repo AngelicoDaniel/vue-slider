@@ -13,11 +13,11 @@
 <div id="root">
     <main class="container d-flex justify-content-center align-items-center">
 
-       <div class="fs-5 mx-5"><i class="fa-solid fa-arrow-left"></i></div>
+       <div class="fs-5 mx-5" @click="next"><i class="fa-solid fa-arrow-left"></i></div>
         
-       <img :src="images[0]" alt="cover">
+       <img :src="images[img]" alt="cover">
 
-       <div class="fs-5 mx-5"><i class="fa-solid fa-arrow-right"></i></div>
+       <div class="fs-5 mx-5" @click="next"><i class="fa-solid fa-arrow-right"></i></div>
 
     </main>
 </div>

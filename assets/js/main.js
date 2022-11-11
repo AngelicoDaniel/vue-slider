@@ -5,6 +5,8 @@ var app = new Vue({
       img: 0
     },
     methods: {
-        
+        next: function(){
+            this.img++;
+        }
     }
   })
