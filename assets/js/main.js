@@ -7,10 +7,10 @@ var app = new Vue({
     },
     methods: {
         next: function(){
-            this.img++;
             if (this.img == this.images.length - 1){
                 this.img = 0
-            
+            } else {
+                this.img++;
             }
         },
         previous: function(){
@@ -21,9 +21,10 @@ var app = new Vue({
         },
         selected: function(index){
             this.img = index
+            this.img = backgroundImage  
         }
     },
     created: function() {
-        setInterval(this.next, 5000)
+        setInterval(this.next, 3000)
     }
   })
