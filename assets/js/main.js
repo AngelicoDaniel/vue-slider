@@ -24,6 +24,6 @@ var app = new Vue({
         }
     },
     created: function() {
-        setInterval(this.next, 300000)
+        setInterval(this.next, 5000)
     }
   })
